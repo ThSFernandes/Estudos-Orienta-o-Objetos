@@ -2,8 +2,8 @@
 public class CriaConta {
 
     public static void main(String[] args) {
-        Conta primeiraConta = new Conta(); // ( instânciando necessário new ); 
-        primeiraConta.saldo = 200; // (referencia . |atributo, campo ou propriedade| ) estamos atribuindo 200;
+        Conta primeiraConta = new Conta(); // ( parar instanciar é necessário new ); 
+        primeiraConta.saldo = 200; // (referência . |atributo = campo = propriedade| ) estamos atribuindo 200;
         
         //System.out.println(primeiraConta.saldo);
 
