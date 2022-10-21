@@ -1,0 +1,140 @@
+
+package teste2;
+
+import teste.Conjunto;
+import teste.Ponto;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
+
+public class ProjetoPonto {
+
+    
+    public static void main(String[] args) {
+        
+        
+       
+        Conjunto c1 = new Conjunto(1, "c1");
+        System.out.println(c1);
+        
+        
+        Ponto p1 = new Ponto("p1" , 3 ,5 );
+        
+        if(c1.adicionarPonto(p1) >= 0 ){
+            System.out.println("Sucesso na operação !");
+        }
+        else{
+            System.out.println("Erro na operação !");
+        }
+        
+        System.out.println(c1);
+        c1.adicionarPonto(new Ponto("p2",2,4));
+        System.out.println(c1);
+        
+        c1.listarPontos();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /*
+        
+        // ------------------------------------------------------------------------
+        
+        System.out.println("Programa iniciado");
+        
+        ArrayList   listaPontos = new ArrayList<>();
+        
+        
+        
+        
+       
+        
+        String texto = null;
+        Ponto p1=null;
+        double x=0, y =0;
+        String descricao = null;
+        
+        do{
+            descricao = JOptionPane.showInputDialog("Digite a descrição");
+            
+            texto = JOptionPane.showInputDialog("Informe o valor de x: ");
+            x=Double.parseDouble(texto);
+            
+            if(x < 0){
+                break;
+            }
+            
+            texto = JOptionPane.showInputDialog("Informe o valor de y: ");
+            y=Double.parseDouble(texto);
+         
+            if(y < 0){
+                break;
+            }
+
+         p1 = new Ponto(x,y);
+         p1.setDescricao(descricao);
+         
+         if (p1 != null){
+             listaPontos.add(p1);
+             System.out.println("p1.size()=" + listaPontos.size());
+         }
+         JOptionPane.showMessageDialog(null, "" + p1);
+         
+        }while (x >=  0 && y >= 0);
+        Ponto temp=null;
+        
+        for (int i = 0; i < listaPontos.size(); i++) {
+            temp=(Ponto)listaPontos.get(i);
+            JOptionPane.showMessageDialog(null, "Objeto " + (i+1) + "=" + temp);
+            
+        }
+         
+        JOptionPane.showMessageDialog(null, "Fim do programa!");
+        
+        /*Ponto p1 = new Ponto(8,4);
+        p1.setX(10);
+        p1.setY(11);
+        System.out.println(p1.toString());
+        System.out.println("P1.x: "+p1.getX());
+        System.out.println("P1.y: "+p1.getY());
+        p1.incrementarCoordenadas(2, 4);
+        p1.imprimirCoordenadas();
+        p1.zerarCoordenadas();
+        p1.imprimirCoordenadas();
+       
+        Ponto p2 = new Ponto(6,9);
+        p2.setX(5);
+        p2.setY(15);
+        System.out.println("P2.x: "+p2.getX());
+        System.out.println("P2.y: "+p2.getY());
+       
+        p1.incrementarCoordenadas(3, 2);
+        p1.imprimirCoordenadas();
+        p1.zerarCoordenadas();
+        p2.imprimirCoordenadas();
+       
+       Ponto p3 = new Ponto();
+       p3.imprimirCoordenadas();
+       
+       Ponto p4 = new Ponto("p4", 8,9);
+       p4.imprimirCoordenadas();
+        Ponto p5 = new Ponto("p5", 10, 20);
+        p5.imprimirCoordenadas();
+        p5.incrementarCoordenadas(2, 3);
+        p5.imprimirCoordenadas();
+
+        Ponto p6 = new Ponto("p6", 5, 8);
+        p6.imprimirCoordenadas();
+        p6.incrementarCoordenadas(2, 3);
+        p6.imprimirCoordenadas();
+         */
+         
+    }
+    
+    
+}
