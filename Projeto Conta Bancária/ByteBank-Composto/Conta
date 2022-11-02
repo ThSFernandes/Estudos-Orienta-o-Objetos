@@ -3,7 +3,7 @@
 
 public class Conta {  // ( definindo atributos e comportamentos )
 
-    double saldo;
+    private double saldo;
     int numeroDaConta;
     int agencia;
     Cliente titular;
@@ -35,7 +35,9 @@ public class Conta {  // ( definindo atributos e comportamentos )
 
     }
     
-    
-    
+    public double getSaldo(){
+        return this.saldo;
+    }
+   
 
 }
